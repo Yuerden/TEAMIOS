@@ -1,0 +1,11 @@
+class walker: Enemy {
+    //standard speed, health
+    #define MAX_HEALTH 100
+    #define SPEED 3
+
+    override init() { init(x: 0, y: 0) }
+
+    override init(x: Int, y: Int){
+        super.init(x: x, y: y, speed: SPEED, hpMax: MAX_HEALTH)
+    }
+}
