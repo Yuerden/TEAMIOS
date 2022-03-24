@@ -2,21 +2,21 @@ class Enemy {
     //REPRESENTATION:
     var xPos: Int
     var yPos: Int
-    var speed: Int
-    var hpMax: Int
-
     var hp: Int
     var isDead: Bool
 
+    //Overriden default reps
+    var speed: Int  { get { return 3 } }
+    var hpMax: Int  { get { return 100 } }
+    var ID: Int     { get { return 0 } }
+
     init(){
-        init(x: 0, y: 0, speed: 3, hpMax: 100)
+        init(x: 0, y: 0)
     }
 
-    init(x: Int, y: Int, speed: Int, hpMax: Int){
+    init(x: Int, y: Int){
         xPos = x
         yPos = y
-        self.speed = speed
-        self.hpMax = hpMax
         isDead = false
         hp = hpMax
     }
