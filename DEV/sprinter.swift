@@ -3,6 +3,12 @@ class sprinter: Enemy {
     #define MAX_HEALTH 75
     #define SPEED_1 5
     #define SPEED_2 2
+    #define ID 2
+    
+    override var speed: Int  { get { return SPEED } }
+    override var hpMax: Int  { get { return MAX_HEALTH } }
+    override var ID: Int     { get { return ID } }
+    
     var isFast: Bool
 
     override init() { init(x: 0, y: 0) }
