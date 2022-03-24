@@ -2,6 +2,11 @@ class runner: Enemy {
     //high speed, low health
     #define MAX_HEALTH 50
     #define SPEED 4
+    #define ID 3
+    
+    override var speed: Int  { get { return SPEED } }
+    override var hpMax: Int  { get { return MAX_HEALTH } }
+    override var ID: Int     { get { return ID } }
 
     override init() { init(x: 0, y: 0) }
 
